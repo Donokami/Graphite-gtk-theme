@@ -70,24 +70,24 @@
     }
   } @else {
     @if ($variant == 'light') {
-      @if ($theme == 'default') { @return $grey-900; }
-      @if ($theme == 'purple')  { @return $purple-400; }
-      @if ($theme == 'pink')    { @return $pink-400; }
-      @if ($theme == 'red')     { @return $red-600; }
-      @if ($theme == 'orange')  { @return $orange-700; }
-      @if ($theme == 'yellow')  { @return $yellow-700; }
-      @if ($theme == 'green')   { @return $green-500; }
-      @if ($theme == 'teal')    { @return $teal-500; }
+      @if ($theme == 'default') { @return #333333; }
+      @if ($theme == 'purple')  { @return #AB47BC; }
+      @if ($theme == 'pink')    { @return #EC407A; }
+      @if ($theme == 'red')     { @return #E53935; }
+      @if ($theme == 'orange')  { @return #F57C00; }
+      @if ($theme == 'yellow')  { @return #FBC02D; }
+      @if ($theme == 'green')   { @return #4CAF50; }
+      @if ($theme == 'teal')    { @return #009688; }
       @if ($theme == 'blue')    { @return #3684dd; }
     } @else {
-      @if ($theme == 'default') { @return $grey-300; }
-      @if ($theme == 'purple')  { @return $purple-300; }
-      @if ($theme == 'pink')    { @return $pink-300; }
-      @if ($theme == 'red')     { @return $red-500; }
-      @if ($theme == 'orange')  { @return $orange-600; }
-      @if ($theme == 'yellow')  { @return $yellow-a700; }
-      @if ($theme == 'green')   { @return $green-400; }
-      @if ($theme == 'teal')    { @return $teal-300; }
+      @if ($theme == 'default') { @return #E0E0E0; }
+      @if ($theme == 'purple')  { @return #BA68C8; }
+      @if ($theme == 'pink')    { @return #F06292; }
+      @if ($theme == 'red')     { @return #F44336; }
+      @if ($theme == 'orange')  { @return #FB8C00; }
+      @if ($theme == 'yellow')  { @return #FFD600; }
+      @if ($theme == 'green')   { @return #66BB6A; }
+      @if ($theme == 'teal')    { @return #4DB6AC; }
       @if ($theme == 'blue')    { @return #5294e2; }
     }
   }
@@ -154,7 +154,7 @@
 //
 
 $primary:                               theme(color);
-$drop_target_color:                     $deep-orange-400;
+$drop_target_color:                     #FF7043;
 $indicator:                             theme(color);
 $titlebar-indicator:                    if($variant == 'dark', currentColor, $primary);
 $inverse-indicator:                     if($theme == 'default', white, $primary);
@@ -186,8 +186,8 @@ $entry:                                 if($variant == 'dark', on($background, s
 // Misc colors
 //
 
-$link:                                  $blue-500;
-$link-visited:                          if($variant == 'light', $purple-500, $purple-200);
+$link:                                  #2196F3;
+$link-visited:                          if($variant == 'light', #9C27B0, #CE93D8);
 
 $warning:                               if($variant == 'light', #F4B400, #FDD633);
 $error:                                 if($variant == 'light', #D93025, #F28B82);
